@@ -1,6 +1,10 @@
+
+
 # 🏥 Healthcare Database System
 
 This project is a comprehensive **SQL-based Healthcare Database** designed to manage and analyze data related to patients, doctors, appointments, prescriptions, and billing. It includes queries for data retrieval, analytics, performance tracking, and reporting to support healthcare operations and decision-making.
+
+---
 
 ## 📦 Project Overview
 
@@ -12,11 +16,15 @@ The healthcare database supports:
 * Billing and payment tracking
 * Analytical insights (demographics, trends, doctor performance)
 
+---
+
 ## 🛠️ Technologies Used
 
 * **SQL (MySQL syntax)**
 * Relational Database Concepts
 * Data Analysis using Aggregate Functions and Joins
+
+---
 
 ## 🗃️ Database Schema Overview
 
@@ -29,7 +37,11 @@ The project uses a relational database named `healthcare` with the following mai
 | `appointments`  | Stores appointment records      |
 | `prescriptions` | Stores medications prescribed   |
 | `billing`       | Stores billing and payment data |
+
+---
+
 ## 📌 Key Features and Queries
+
 ### 1. 🧾 Data Retrieval
 
 ```sql
@@ -39,6 +51,9 @@ SELECT * FROM appointments;
 SELECT * FROM prescriptions;
 SELECT * FROM billing;
 ```
+
+---
+
 ### 2. 👥 Patient Management
 
 * Appointments for a specific patient
@@ -51,6 +66,9 @@ SELECT * FROM billing;
 SELECT * FROM appointments WHERE patient_id = 1;
 SELECT * FROM prescriptions WHERE appointment_id = 1;
 ```
+
+---
+
 ### 3. 📅 Appointments
 
 * Appointment trends by month or year
@@ -62,6 +80,8 @@ SELECT * FROM prescriptions WHERE appointment_id = 1;
 ```sql
 SELECT DATE_FORMAT(appointment_date,'%Y-%m') AS month, COUNT(*) FROM appointments GROUP BY month;
 ```
+
+---
 
 ### 4. 💊 Prescription Tracking
 
@@ -76,6 +96,8 @@ GROUP BY medication
 ORDER BY frequency DESC;
 ```
 
+---
+
 ### 5. 💰 Billing & Payments
 
 * Total billed and paid
@@ -88,6 +110,8 @@ SELECT
   (SELECT SUM(amount) FROM billing) AS total_billed,
   (SELECT SUM(amount) FROM billing WHERE status = 'Paid') AS total_paid;
 ```
+
+---
 
 ### 6. 📈 Analytics & Reports
 
@@ -102,6 +126,8 @@ FROM doctors d
 LEFT JOIN appointments a ON d.doctor_id = a.doctor_id
 GROUP BY d.doctor_id;
 ```
+
+---
 
 ## 🧪 Example Use Cases
 
@@ -130,27 +156,9 @@ GROUP BY d.doctor_id;
 
 ---
 
-## 🚧 Known Issues
-
-* Query performance may degrade with large datasets without indexing.
-* Assumes clean and normalized data; input validation not included.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-## 🙋‍♂️ Contributions
-
-Feel free to fork the repo and submit pull requests. Suggestions and feedback are welcome!
-
----
 
 ## 📬 Contact
 
 **Author:** Your Name
-📧 [your.email@example.com](mailto.MAHEK456SHRIVASTAVA@GMAIL.COM)
-🔗 [GitHub Profile](https://github.com/MAHEK45600)
+📧 [your.email@example.com](mahek456shrivastava@gmail.com)
+🔗 [GitHub Profile](https://github.com/Mahek45600)
